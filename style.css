@@ -1,0 +1,180 @@
+* {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  padding-top: 120px;
+  overflow: auto;
+  margin: 0 auto;
+  /*margin 0 auto; sirve para centrar los elementos en la pantalla*/
+}
+
+.initial-box {
+  max-width: 450px;
+  padding: 10px;
+}
+
+.initial-box_title {
+  color: #0e5c22;
+  letter-spacing: 1.5px;
+}
+
+.initial-box_caption {
+  line-height: 1.4;
+}
+.survey {
+  max-width: 450px;
+  height: 550px;
+  padding: 10px;
+}
+
+input,
+textarea {
+  border: 0;
+  outline: none;
+}
+
+textarea {
+  vertical-align: top;
+  height: 3em;
+  resize: vertical;
+}
+
+.emailfield,
+.namefield,
+.numberfield,
+.message {
+  padding: 10px;
+  width: 280px;
+  border: 1.5px solid #ccc;
+  border-radius: 5%;
+}
+
+.payfield {
+  border: 1.5px solid #ccc;
+  border-radius: 5%;
+  padding: 10px;
+  width: 300px;
+}
+
+.emailfield:focus,
+.namefield:focus,
+.numberfield:focus,
+.payfield:focus,
+.message:focus {
+  border-color: #18a383;
+}
+
+/*Validation name, email and number field*/
+
+/* checkbox additional design*/
+/* The checkbox-box */
+.checkbox-box {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: -7px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.chechbox-box:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-box input:checked ~ .checkmark {
+  background-color: #18a383;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-box:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-box .checkmark:after {
+  left: 4px;
+  top: 3.5px;
+  width: 3.5px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
+  align-content: center;
+}
+
+.checkbox-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* end of design checkbox*/
+
+.message-title {
+  margin-top: 16px;
+  margin-bottom: 3px;
+}
+.pay-btn {
+  width: 306px;
+  height: 37px;
+  margin-top: 20px;
+  background: #669275;
+  border-radius: 10px;
+  color: white;
+}
+
+.img {
+  width: 730px;
+  height: 722px;
+  background-image: url("pcgirl2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: right;
+  position: relative;
+  bottom: 722px;
+  border-radius: 5px;
+  opacity: 0.6;
+}
