@@ -9,126 +9,134 @@
   <body>
     <div class="container">
       <div class="initial-box">
-        <h1 id="title" class="initial-box_title">Welcome to OnePay</h1>
+        <h1 id="title" class="initial-box_title">Welcome to OnePay!</h1>
         <p id="description" class="initial-box_caption">
-          Let's configure your scheduled payment to enjoy all the <br />
-          benefits of advanced and accomplished management!
+          Let's configure your scheduled payment to enjoy all the benefits of
+          advanced and accomplished management! Remenber that you can modify,
+          change, or cancel your subscribtion whenever you want.
         </p>
       </div>
 
-      <div class="Survey-box">
-        <form id="survey-form" class="survey">
-          <div>
-            <label id="name-label" for="name">name:</label> <br />
-            <input
-              class="namefield"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="card holder name"
-              required
-              autofocus
-              pattern="[a-z]{3}"
-            />
-          </div>
-          <br />
-
-          <div id="email-box">
-            <label id="email-label" for="email">e-mail:</label><br />
-            <input
-              class="emailfield"
-              type="email"
-              id="email"
-              placeholder="example@email.com"
-              required
-            />
-          </div>
-          <br />
-
-          <div id="number-box">
-            <label id="number-label" for="number">card Number:</label><br />
-            <input
-              class="numberfield"
-              type="number"
-              id="number"
-              name="number"
-              min="1000"
-              max="9999"
-              placeholder="your card number (0000)"
-              required
-            />
-          </div>
-          <br />
-
-          <div class="radio-button_box">
-            <label class="radio-title">card type:</label>
-            <span class="radioBtn">debit</span>
-            <input
-              type="radio"
-              id="a-option"
-              value="debit"
-              name="radio"
-              class="radiofield"
-            />
-
-            <span class="radioBtn">credit </span>
-            <input
-              type="radio"
-              id="b-option"
-              value="credit"
-              name="radio"
-              class="radiofield"
-              checked="checked"
-            />
-          </div>
-          <br />
-
-          <div id="dropdown">
-            <label class="payment" for="pay">scheduled payment to: </label>
+      <div class="wrapper">
+        <div class="Survey-box">
+          <form id="survey-form" class="survey">
+            <div>
+              <label id="name-label" for="name">name:</label> <br />
+              <input
+                class="namefield"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="card holder name"
+                required
+                autofocus
+                pattern="[a-z]{3}"
+              />
+            </div>
             <br />
-            <select id="pay" name="pay-date" class="payfield">
-              <option value="" disabled selected>select one</option>
-              <option value="item1">three month</option>
-              <option value="item2">six month</option>
-              <option value="item3">one year</option>
-            </select>
-          </div>
-          <br />
 
-          <p class="checkbox-title">proof of payment to:</p>
-          <div class="checkboxes">
-            <label class="checkbox-box"
-              >e-mail
-              <input type="checkbox" checked="checked" value="same" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-box"
-              >home
-              <input type="checkbox" value="same" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="checkbox-box"
-              >work
-              <input type="checkbox" value="same" />
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <br />
+            <div id="email-box">
+              <label id="email-label" for="email">e-mail:</label><br />
+              <input
+                class="emailfield"
+                type="email"
+                id="email"
+                placeholder="example@email.com"
+                required
+              />
+            </div>
+            <br />
 
-          <div>
-            <p class="message-title">observations:</p>
-            <textarea
-              class="message"
-              minlength="100"
-              maxlength="1000"
-              placeholder="write a message"
-            ></textarea>
-          </div>
+            <div id="number-box">
+              <label id="number-label" for="number">card Number:</label><br />
+              <input
+                class="numberfield"
+                type="number"
+                id="number"
+                name="number"
+                min="1000"
+                max="9999"
+                placeholder="your card number (0000)"
+                required
+              />
+            </div>
+            <br />
 
-          <button type="submit" class="pay-btn" id="submit">pay now</button>
-        </form>
+            <div class="radio-button_box">
+              <label class="radio-title">card type:</label>
+              <span class="radioBtn">debit</span>
+              <input
+                type="radio"
+                id="a-option"
+                value="debit"
+                name="radio"
+                class="radiofield"
+              />
 
-        <div class="img"></div>
+              <span class="radioBtn">credit </span>
+              <input
+                type="radio"
+                id="b-option"
+                value="credit"
+                name="radio"
+                class="radiofield"
+                checked="checked"
+              />
+            </div>
+            <br />
+
+            <div id="dropdown">
+              <label class="payment" for="pay">scheduled payment to: </label>
+              <br />
+              <select id="pay" name="pay-date" class="payfield">
+                <option value="" disabled selected>select one</option>
+                <option value="item1">three month</option>
+                <option value="item2">six month</option>
+                <option value="item3">one year</option>
+              </select>
+            </div>
+            <br />
+
+            <p class="checkbox-title">proof of payment to:</p>
+            <div class="checkboxes">
+              <label class="checkbox-box"
+                >e-mail
+                <input type="checkbox" checked="checked" value="same" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-box"
+                >home
+                <input type="checkbox" value="same" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-box"
+                >work
+                <input type="checkbox" value="same" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <br />
+
+            <div>
+              <p class="message-title">observations:</p>
+              <textarea
+                class="message"
+                minlength="100"
+                maxlength="1000"
+                placeholder="write a message"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="pay-btn" id="submit">pay now</button>
+          </form>
+        </div>
+        <div class="img-div">
+          <img
+            class="img"
+            src="https://i.imgur.com/ZZdQ0Fc.jpg"
+            alt="woman typing in her laptop"
+          />
+        </div>
       </div>
     </div>
 
@@ -142,7 +150,6 @@
           />
         </a>
       </p>
-      <!--https://validator.w3.org/nu/#l78c33-->
     </footer>
   </body>
 </html>

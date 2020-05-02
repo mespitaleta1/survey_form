@@ -4,17 +4,20 @@
 }
 
 .container {
+  width: 100%;
   min-width: 320px;
   max-width: 1200px;
-  padding-top: 120px;
+  padding: 45px 50px 40px;
   overflow: auto;
   margin: 0 auto;
   /*margin 0 auto; sirve para centrar los elementos en la pantalla*/
 }
 
 .initial-box {
-  max-width: 450px;
+  width: 850px;
   padding: 10px;
+  margin-left: 35px;
+  font-size: 17px;
 }
 
 .initial-box_title {
@@ -166,15 +169,30 @@ textarea {
   color: white;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 30px;
+}
+
 .img {
-  width: 730px;
-  height: 722px;
-  background-image: url("https://i.imgur.com/ZZdQ0Fc.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  float: right;
-  position: relative;
-  bottom: 722px;
-  border-radius: 5px;
-  opacity: 0.6;
+  width: 630px;
+  height: 560px;
+  border-radius: 10px;
+  display: block;
+}
+
+@media screen and (max-width: 320px;) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .initial-box {
+    width: 650px;
+  }
+  .img {
+    display: none;
+  }
 }
